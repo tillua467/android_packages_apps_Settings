@@ -20,6 +20,11 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
+    <!-- Losp logo -->
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="losp_logo"
+        android:layout="@layout/losp_logo"
+        android:selectable="false"/>
 
     <!-- Android version -->
     <Preference
@@ -30,7 +35,7 @@
         settings:searchable="false"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
 
-    <!-- Lineage version -->
+    <!-- Losp version -->
     <Preference
         android:key="lineage_version"
         android:title="@*lineageos.platform:string/lineage_version"
